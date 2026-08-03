@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #24292e;
+  line-height: 1.6;
+}
+
+/* ---------- Navbar: fixed to the left edge ---------- */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 260px;
+  overflow-y: auto;
+  background-color: #f6f8fa;
+  border-right: 1px solid #d0d7de;
+  padding: 1rem 0;
+}
+
+#navbar header {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem 1rem;
+  color: #0969da;
+  border-bottom: 1px solid #d0d7de;
+  margin-bottom: 0.5rem;
+}
+
+#navbar .nav-link {
+  display: block;
+  padding: 0.6rem 1.5rem;
+  color: #24292e;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+#navbar .nav-link:hover {
+  background-color: #eaeef2;
+  color: #0969da;
+}
+
+/* ---------- Main content, offset to the right of the fixed navbar ---------- */
+
+#main-doc {
+  margin-left: 260px;
+  padding: 2rem 3rem;
+  max-width: 800px;
+}
+
+.main-section {
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eaeef2;
+}
+
+.main-section header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+}
+
+.main-section p {
+  margin: 0 0 1rem;
+}
+
+.main-section ul {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.main-section li {
+  margin-bottom: 0.4rem;
+}
+
+code {
+  display: inline-block;
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+
+/* ---------- Media query: collapse sidebar on narrow / mobile screens ---------- */
+
+@media (max-width: 600px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #d0d7de;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+#about-bg-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
