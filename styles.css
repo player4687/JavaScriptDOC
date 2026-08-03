@@ -9,7 +9,7 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- Navbar: fixed to the left edge ---------- */
+/* Bro came here to view the code.... nice, have a good day Ig. ALSO IM A HUMAN NOT AI. */
 
 #navbar {
   position: fixed;
@@ -45,7 +45,8 @@ body {
   color: #0969da;
 }
 
-/* ---------- Main content, offset to the right of the fixed navbar ---------- */
+
+
 
 #main-doc {
   margin-left: 260px;
@@ -90,7 +91,7 @@ code {
   margin: 0.2rem 0;
 }
 
-/* ---------- Media query: collapse sidebar on narrow / mobile screens ---------- */
+
 
 @media (max-width: 600px) {
   #navbar {
